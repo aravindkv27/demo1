@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Empty Line Finder{% endblock %}
+{% block content %}
+<h1>The File name must be in "random.txt"</h1>
+<div class="submit">
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" placeholder="Enter the file" required="required"/>
+        <button type="submit" value="Upload">Check</button>
+    </form>  
+    
+</div>
+{% endblock %}
